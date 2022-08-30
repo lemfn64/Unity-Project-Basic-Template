@@ -39,6 +39,6 @@ If you are starting a new project you can start working now, but if you are addi
 3. If you had unity collab or plastic, disable it now.
 4. Save your project and close unity.
 5. delete left over files from plastic or collab like x.meta.private or y.meta.private.meta (some files may be hidden so enable see hidden files)
-5. Commit and push.
-6. If you are having issues with .meta files check and modify your gitignore or make sure there are no empty folders. 
+6. Commit and push.
+7. If you are having issues with .meta files check and modify your gitignore or make sure there are no empty folders. 
 
