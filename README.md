@@ -9,8 +9,6 @@ When you clone this repository, remember to make sure Git LFS is installed. Then
 Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your global .gitconfig to define the "unityyamlmerge" merge tool that this repository's .gitconfig points to. To do this:
 
 1. Find and open your local config file inside of the hidden git folder `.git\config`:
-- Mac/Linux: In your user "home" directory (e.g. `~/.gitconfig`)
-- Windows: In you user directory (e.g. `C:\Users\<YOUR USER IDENTIFIER>\.gitconfig`)
 2. Identify your version of unity (e.g. `2020.3.21f1`). This will replace the word `VERSION` in the paths commented below depending on your OS
 3. Add the following text to the bottom of the file, subbing in the unitymergetool path:
 ```bash
