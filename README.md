@@ -6,11 +6,14 @@ Before you start, follow these instructions:
 When you clone this repository, remember to make sure Git LFS is installed. Then clone this repo.
 
 ## Modify your GLOBAL .gitconfig
-Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your local config to define the "unityyamlmerge" merge tool that this repository's .gitconfig points to. To do this:
+Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your local config to define the "UnityYAMLMerge" merge tool that this repository's .gitconfig points to. To do this:
 
 1. Find and open your local config file inside of the hidden git folder `.git\config`:
-2. Identify your version of unity (e.g. `2020.3.21f1`). This will replace the word `VERSION` in the paths commented below depending on your OS
-3. Add the following text to the bottom of the file, subbing in the unitymergetool path:
+2. Identify your version of unity (e.g. `2022.3.19f1`). This will replace the word `VERSION` in the paths commented below depending on your OS. For instance, in Unity version 2022.3.19f1 on Windows, the last line should be:
+'''bash
+    cmd = 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+'''
+3. Add the following text to the bottom of the file, replacing <path to UnityYAMLMerge> with the one specific to your OS and Unity version.
 ```bash
 [mergetool "unityyamlmerge"]
     trustExitCode = false
@@ -33,10 +36,10 @@ Download the scripts from the link below and paste them into `<your_repo>/.git/h
 ## Starting a new project or adding version control to an old one?
 If you are starting a new project you can start working now, but if you are adding version control to an old one follow these steps:
 1. Paste your project files into this repository on your local machine. 
-2. Open the project on the target unity version, so all the files are modified as necessary. 
-3. If you had unity collab or plastic, disable it now.
-4. Save your project and close unity.
-5. delete left over files from plastic or collab like x.meta.private or y.meta.private.meta (some files may be hidden so enable see hidden files)
+2. Open the project on the target Unity version, so all the files are modified as necessary. 
+3. If you had Unity Version Control (formerly Collab or Plastic SCM), disable it now.
+4. Save your project and close Unity.
+5. Delete left over files from Unity Version Control like x.meta.private or y.meta.private.meta (some files may be hidden so enable see hidden files)
 6. Commit and push.
 7. If you are having issues with .meta files check and modify your gitignore or make sure there are no empty folders. 
 
