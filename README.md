@@ -7,9 +7,14 @@ When you clone this repository, remember to make sure Git LFS is installed. Then
 
 ## Modify your GLOBAL .gitconfig
 Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your local config to define the "UnityYAMLMerge" merge tool that this repository's .gitconfig points to. To do this:
+i. Reveal hidden files on your operating system
+- Windows 10: Open the File Explorer application and select View > Options > Change folder and search options and then select the View tab and, in Advanced settings, select Show hidden files, folders, and drives and OK
+- Windows 11: Open the File Explorer application and select View > Show > Hidden Items
+- MacOS: Click on Finder and press the keyboard combination `Shift + Cmd + .` (period key)
 
-1. Find and open your local config file inside of the hidden git folder `.git\config`:
-2. Identify your version of unity (e.g. `2022.3.19f1`). This will replace the word `VERSION` in the paths commented below depending on your OS. Then, add the following text to the bottom of the file, replacing `<path to UnityYAMLMerge>` with the one specific to your OS and Unity version. For instance, in Unity version 2022.3.19f1 on Windows, the last line should be `cmd = 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"`
+ii. Open the `.git/config` file by navigating to your local repo folder, open the hidden `.git` folder, then open the config file (note: this is different from the `.gitconfig` file in the repo’s root folder)
+
+iii. Identify your version of unity (e.g. `2022.3.19f1`). This will replace the word `VERSION` in the paths commented below depending on your OS. Then, add the following text to the bottom of the file, replacing `<path to UnityYAMLMerge>` with the one specific to your OS and Unity version. For instance, in Unity version 2022.3.19f1 on Windows, the last line should be `cmd = 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"`
 ```bash
 [mergetool "unityyamlmerge"]
     trustExitCode = false
