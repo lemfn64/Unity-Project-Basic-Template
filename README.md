@@ -10,9 +10,9 @@ Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffren
 
 1. Find and open your local config file inside of the hidden git folder `.git\config`:
 2. Identify your version of unity (e.g. `2022.3.19f1`). This will replace the word `VERSION` in the paths commented below depending on your OS. For instance, in Unity version 2022.3.19f1 on Windows, the last line should be:
-'''bash
+```bash
     cmd = 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
-'''
+```
 3. Add the following text to the bottom of the file, replacing <path to UnityYAMLMerge> with the one specific to your OS and Unity version.
 ```bash
 [mergetool "unityyamlmerge"]
