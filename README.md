@@ -6,7 +6,7 @@ Before you start, follow these instructions:
 When you clone this repository, remember to make sure Git LFS is installed. Then clone this repo.
 
 ## Modify your GLOBAL .gitconfig
-Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your local config to define the "UnityYAMLMerge" merge tool that this repository's .gitconfig points to. To do this:
+Not everyone has the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your local config to define the "UnityYAMLMerge" merge tool that this repository's .gitconfig points to. To do this:
 
 1. Reveal hidden files on your operating system
 - Windows 10: Open the File Explorer application and select View > Options > Change folder and search options and then select the View tab and, in Advanced settings, select Show hidden files, folders, and drives and OK
@@ -28,7 +28,7 @@ Not everyone on your team may have the same path to UnityYAMLMerge (i.e. diffren
 ```
 
 ## Opening the Project
-This project was created using `2020.3.17f1`. When you open this project in Unity, Unity may say that it needs to upgrade the project. Given this is a bare-bones project, this is a safe action and you may allow Unity to continue. Overall, your entire team should be using the **same version of Unity**.
+This project was created using `2020.3.17f1`. When you open this project in Unity, Unity may say that it needs to upgrade the project. Given this is a bare-bones project, this is a safe action and you may allow Unity to continue. Overall, everyone collaborating on this repository should be using the **same version of Unity**.
 
 ## Adding pre and post-commit scripts
 Download the scripts from the link below and paste them into `<your_repo>/.git/hooks/`
