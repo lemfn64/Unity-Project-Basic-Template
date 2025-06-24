@@ -1,11 +1,21 @@
-# Unity Project Setup (PLEASE READ)
+# Project Title(modify)
+## INDEX
+
+- [About](#about)
+- [Installation](#installation)
+
+## About
+
+Add specific information about this project (modify)
+
+## Installation
 
 Before you start, follow these instructions:
 
-## Make sure Git LFS is installed
+### Make sure Git LFS is installed
 When you clone this repository, remember to make sure Git LFS is installed. Then clone this repo.
 
-## Modify your GLOBAL .gitconfig
+### Modify your GLOBAL .gitconfig
 Not everyone has the same path to UnityYAMLMerge (i.e. diffrent operating systems or install locations). Because of this, we suggest you modify your local config to define the "UnityYAMLMerge" merge tool that this repository's .gitconfig points to. To do this:
 
 1. Reveal hidden files on your operating system
@@ -27,15 +37,15 @@ Not everyone has the same path to UnityYAMLMerge (i.e. diffrent operating system
     cmd = '<path to UnityYAMLMerge>' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
 ```
 
-## Opening the Project
+### Opening the Project
 This project was created using `2020.3.17f1`. When you open this project in Unity, Unity may say that it needs to upgrade the project. Given this is a bare-bones project, this is a safe action and you may allow Unity to continue. Overall, everyone collaborating on this repository should be using the **same version of Unity**.
 
-## Adding pre and post-commit scripts
+### Adding pre and post-commit scripts
 Download the scripts from the link below and paste them into `<your_repo>/.git/hooks/`
 - Pre-commit: https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/pre-commit
 - Post-commit: https://github.com/NYUGameCenter/Unity-Git-Config/blob/master/post-merge
 
-## Starting a new project or adding version control to an old one?
+### Starting a new project or adding version control to an old one?
 If you are starting a new project you can start working now, but if you are adding version control to an old one follow these steps:
 1. Paste your project files into this repository on your local machine. 
 2. Open the project on the target Unity version, so all the files are modified as necessary. 
